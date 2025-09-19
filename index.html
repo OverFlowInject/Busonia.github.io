@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Employee Downloads</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .file-list {
+      max-height: 400px;
+      overflow-y: auto;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    .file-item {
+      border-bottom: 1px solid #eee;
+      padding: 10px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .file-item:last-child {
+      border-bottom: none;
+    }
+    .pdf-thumb {
+      width: 100px;
+      height: 130px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg') no-repeat center;
+      background-size: contain;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 6px 12px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Employee Downloads</h1>
+  <div class="file-list">
+    <!-- Example PDF item -->
+    <div class="file-item">
+      <div class="pdf-thumb"></div>
+      <a href="files/employee-handbook.pdf" download>
+        <button>Download Employee Handbook</button>
+      </a>
+    </div>
+
+    <div class="file-item">
+      <div class="pdf-thumb"></div>
+      <a href="files/payroll-info.pdf" download>
+        <button>Download Payroll Info</button>
+      </a>
+    </div>
+
+    <!-- Add more PDFs here -->
+
+  </div>
+
+</body>
+</html>
